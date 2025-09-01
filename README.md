@@ -8,6 +8,6 @@ _These are just my dotfiles. I used GNU Stow to keep them in one place._
 - .zshrc (for ZSHELL)
 
 ## OTHER STUFF:
-- .spotify.sh (sometimes Spotify doesn't open up... so this clears the cache... flatpak nightmare)
+- .fixSpotify.sh (sometimes Spotify doesn't open up... so this clears the cache... flatpak nightmare)
 
 **EOL**

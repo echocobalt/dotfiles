@@ -14,6 +14,7 @@ vim.opt.smartindent    = true -- justWhatItSays
 vim.opt.wrap           = true -- enableLineWrap
 vim.opt.termguicolors  = true -- betterColors
 vim.opt.cursorline     = true -- highlightCurrentLine
+vim.opt.clipboard      = "unnamedplus" -- tmux + nvim = weird
 
 -- SHORTCUTS
 vim.keymap.set("n", "<leader>e", ":Ex<CR>") -- fileExplorer

@@ -6,20 +6,20 @@ local act = wezterm.action
 -- COLORS OF MY HEART... NOT RED
 config.colors = {
   foreground = "#CBE0F0",
-  background = "#011423",
-  cursor_bg = "#47FF9C",
-  cursor_border = "#47FF9C",
-  cursor_fg = "#011423",
-  selection_bg = "#033259",
-  selection_fg = "#CBE0F0",
-  ansi = {
-    "#214969", "#E52E2E", "#44FFB1", "#FFE073",
-    "#0FC5ED", "#a277ff", "#24EAF7", "#24EAF7",
-  },
-  brights = {
-    "#214969", "#E52E2E", "#44FFB1", "#FFE073",
-    "#A277FF", "#a277ff", "#24EAF7", "#24EAF7",
-  },
+    background = "#011423",
+    cursor_bg = "#47FF9C",
+    cursor_border = "#47FF9C",
+    cursor_fg = "#011423",
+    selection_bg = "#033259",
+    selection_fg = "#CBE0F0",
+    ansi = {
+      "#214969", "#E52E2E", "#44FFB1", "#FFE073",
+      "#0FC5ED", "#a277ff", "#24EAF7", "#24EAF7",
+    },
+    brights = {
+      "#214969", "#E52E2E", "#44FFB1", "#FFE073",
+      "#A277FF", "#a277ff", "#24EAF7", "#24EAF7",
+    },
 }
 
 -- FONTIZATION (I DON'T CARE IF THERE'S NO WORD LIKE THAT)
@@ -32,20 +32,19 @@ config.font_size = 13 -- KiKiKiMaMaMa... IThoughtItWas... ChuChuChuHaHaHa
 
 -- MY WINDOW
 config.window_background_opacity = 0.95
-config.window_decorations = "RESIZE"
 config.window_frame = {
-  border_left_width = 1.8,
-  border_right_width = 1.8,
-  border_bottom_height = 1.8,
-  border_top_height = 1.8,
+  border_left_width = 0.78,
+  border_right_width = 0.78,
+  border_bottom_height = 0.27,
+  border_top_height = 0.27,
   border_left_color = "#033259",
   border_right_color = "#033259",
   border_top_color = "#033259",
-  border_bottom_color = "#033259",   
+  border_bottom_color = "#033259",
 }
 
--- NOW... ABOUT THE TABS (I LOVE THEM)
-config.hide_tab_bar_if_only_one_tab = true
+-- NOW... ABOUT THE TABS
+config.enable_tab_bar = false
 config.use_fancy_tab_bar = false
 
 -- BINDING-KEYS
