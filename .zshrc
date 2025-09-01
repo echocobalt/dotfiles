@@ -60,7 +60,7 @@ alias open="xdg-open"
 alias gary="chmod +x" # SUPERMAN ROBOT #4
 alias backup="py ~/docs/grace/justInCase/src/main.py"
 alias alfred="nvim ~/.zshrc && source ~/.zshrc"
-alias fixspot="cd && ./.fixSpotify.sh" 
+alias spotfix="cd && ./.spotfix.sh" 
 alias grace="cd ~/docs/grace/ && tmux"
 alias ls="eza --icons=always"
 alias ll="ls -l"
