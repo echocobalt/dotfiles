@@ -7,7 +7,7 @@ vim.g.maplocalleader = " "
 -- OPTIONS
 vim.opt.number         = true -- enableLineNumbers
 vim.opt.relativenumber = true -- generalTheoryOfRelativity
-vim.opt.tabstop        = 3 -- howFatTabCanBe?3kgs
+vim.opt.tabstop        = 3 -- howFatTabCanBe?3lbs
 vim.opt.shiftwidth     = 3 -- 3steps...IMeanSpaces
 vim.opt.expandtab      = true -- usesSpacesInsteadOfTabs
 vim.opt.smartindent    = true -- justWhatItSays

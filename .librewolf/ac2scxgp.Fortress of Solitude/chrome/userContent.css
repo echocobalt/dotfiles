@@ -1,0 +1,237 @@
+/* ===================================================================
+ *  LATIN ACCENT - FIREFOX TRANSPARENT THEME (HARDENED VERSION)
+ *  Made with cariño by Acercandr0 - Enhanced for better visibility
+ *  =================================================================== */
+
+@-moz-document url("about:home"), url("about:newtab"), url("about:blank") {
+
+  /* Base elements with more solid background */
+  html,
+  body,
+  #root,
+  .outer-wrapper,
+  main,
+  .discovery-stream,
+  .ds-layout,
+  .sections-list {
+    background: light-dark(rgba(245, 245, 245, 0.95), rgba(27, 27, 27, 0.95)) !important;
+    background-color: light-dark(rgba(245, 245, 245, 0.95), rgba(27, 27, 27, 0.95)) !important;
+    background-image: none !important;
+    box-shadow: none !important;
+    filter: none !important;
+    border: none !important;
+  }
+
+  /* Keep search wrapper and top-sites with slight transparency for layered effect */
+  .top-sites,
+  .search-wrapper {
+    background: light-dark(rgba(255, 255, 255, 0.7), rgba(40, 40, 40, 0.7)) !important;
+    background-color: light-dark(rgba(255, 255, 255, 0.7), rgba(40, 40, 40, 0.7)) !important;
+    background-image: none !important;
+    box-shadow: none !important;
+    filter: none !important;
+    border: none !important;
+    border-radius: 8px !important;
+    margin: 8px !important;
+    padding: 12px !important;
+  }
+
+  /* ===========================
+   *    🎯 TOP SITES
+   *    =========================== */
+
+  /* Remove ALL backgrounds from top sites but keep container visible */
+  .top-sites .top-site-outer,
+  .top-sites .top-site-inner,
+  .top-site-outer .tile,
+  .tile,
+  .shortcuts-refresh .top-sites-list .top-site-outer .tile,
+  .shortcuts-refresh .top-sites-list:not(.dnd-active) .top-site-outer:is(.active, :focus, :hover) .tile {
+    background: light-dark(rgba(255, 255, 255, 0.4), rgba(50, 50, 50, 0.4)) !important;
+    background-color: light-dark(rgba(255, 255, 255, 0.4), rgba(50, 50, 50, 0.4)) !important;
+    background-image: none !important;
+    box-shadow: none !important;
+    border: none !important;
+    border-radius: 6px !important;
+    transition: all 0.3s ease !important;
+  }
+
+  /* Enhanced opacity changes on hover */
+  .top-sites .top-site-outer {
+    opacity: 0.6 !important;
+    transition: all 0.3s ease !important;
+  }
+
+  .top-sites .top-site-outer:hover {
+    opacity: 1 !important;
+  }
+
+  .top-sites .top-site-outer:hover .tile {
+    background: light-dark(rgba(255, 255, 255, 0.8), rgba(70, 70, 70, 0.8)) !important;
+    transform: scale(1.05) !important;
+  }
+
+  /* Force better background for topsites section */
+  .top-sites {
+    --newtab-background-color-secondary: light-dark(rgba(255, 255, 255, 0.7), rgba(40, 40, 40, 0.7)) !important;
+  }
+
+  /* ===========================
+   *    🔍 SEARCH BAR ENHANCEMENT
+   *    =========================== */
+
+  /* Make search bar more visible */
+  .search-wrapper .search-inner-wrapper {
+    background: light-dark(rgba(255, 255, 255, 0.9), rgba(50, 50, 50, 0.9)) !important;
+    border: 1px solid light-dark(rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.1)) !important;
+    border-radius: 25px !important;
+    padding: 8px 16px !important;
+    transition: all 0.3s ease !important;
+    display: block !important; /* Override the display: none from original */
+  }
+
+  .search-wrapper .search-inner-wrapper:hover {
+    background: light-dark(rgba(255, 255, 255, 1), rgba(60, 60, 60, 1)) !important;
+    border-color: AccentColor !important;
+    transform: scale(1.02) !important;
+  }
+
+  .search-wrapper .search-inner-wrapper:focus-within {
+    background: light-dark(rgba(255, 255, 255, 1), rgba(60, 60, 60, 1)) !important;
+    border-color: AccentColor !important;
+    box-shadow: 0 0 0 3px color-mix(in srgb, AccentColor 20%, transparent) !important;
+  }
+
+  /* Search input styling */
+  .search-wrapper input {
+    background: transparent !important;
+    border: none !important;
+    color: light-dark(#333, #fff) !important;
+    font-size: 16px !important;
+  }
+
+  .search-wrapper input::placeholder {
+    color: light-dark(#666, #aaa) !important;
+  }
+
+  /* ===========================
+   *    🛠️ CUSTOMIZE MENU FIX
+   *    =========================== */
+
+  /* Restore proper background for customize menu */
+  .customize-menu,
+  .customize-menu.customize-animate-enter-done {
+    background: light-dark(rgba(255, 255, 255, 0.95), rgba(40, 40, 40, 0.95)) !important;
+    background-color: light-dark(rgba(255, 255, 255, 0.95), rgba(40, 40, 40, 0.95)) !important;
+    backdrop-filter: blur(10px) !important;
+    border: 1px solid light-dark(rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.1)) !important;
+    border-radius: 8px !important;
+    box-shadow: 0 4px 20px light-dark(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)) !important;
+  }
+
+  /* Fix text visibility in customize menu */
+  .customize-menu .section-title,
+  .customize-menu .section-disclaimer,
+  .customize-menu .personalize-button,
+  .customize-menu label,
+  .customize-menu input,
+  .customize-menu button {
+    color: light-dark(#333, #fff) !important;
+  }
+
+  /* Customize menu buttons */
+  .customize-menu button {
+    background: light-dark(rgba(255, 255, 255, 0.7), rgba(60, 60, 60, 0.7)) !important;
+    border: 1px solid light-dark(rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.1)) !important;
+    border-radius: 6px !important;
+    transition: all 0.3s ease !important;
+  }
+
+  .customize-menu button:hover {
+    background: light-dark(rgba(255, 255, 255, 1), rgba(70, 70, 70, 1)) !important;
+    border-color: AccentColor !important;
+    transform: scale(1.02) !important;
+  }
+
+  /* ===========================
+   *    📰 CONTENT SECTIONS
+   *    =========================== */
+
+  /* Make content sections more visible */
+  .ds-card,
+  .ds-card-grid,
+  .card-outer {
+    background: light-dark(rgba(255, 255, 255, 0.8), rgba(45, 45, 45, 0.8)) !important;
+    border: 1px solid light-dark(rgba(0, 0, 0, 0.05), rgba(255, 255, 255, 0.05)) !important;
+    border-radius: 8px !important;
+    transition: all 0.3s ease !important;
+  }
+
+  .ds-card:hover,
+  .ds-card-grid:hover,
+  .card-outer:hover {
+    background: light-dark(rgba(255, 255, 255, 1), rgba(55, 55, 55, 1)) !important;
+    border-color: light-dark(rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.1)) !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 4px 12px light-dark(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)) !important;
+  }
+
+  /* Section headers */
+  .section-title {
+    color: light-dark(#333, #fff) !important;
+    font-weight: 600 !important;
+  }
+
+  /* ===========================
+   *    🎭 HIDE ELEMENTS (Optional)
+   *    =========================== */
+
+  /* Uncomment these if you want to hide certain elements */
+  /*
+   * .body-wrapper.on .section-title,
+   * .body-wrapper.on .sections-list .section:last-of-type,
+   * .body-wrapper.on .topics {
+   *   display: none !important;
+}
+*/
+
+  /* ===========================
+   *    💫 LOADING STATES
+   *    =========================== */
+
+  /* Better loading state backgrounds */
+  .card-outer.placeholder,
+  .top-site-outer.placeholder {
+    background: light-dark(rgba(255, 255, 255, 0.5), rgba(40, 40, 40, 0.5)) !important;
+    animation: shimmer 1.5s infinite linear !important;
+  }
+
+  @keyframes shimmer {
+    0% { opacity: 0.5; }
+    50% { opacity: 0.8; }
+    100% { opacity: 0.5; }
+  }
+
+  /* ===========================
+   *    🌟 ENHANCED VISUAL EFFECTS
+   *    =========================== */
+
+  /* Add subtle backdrop filter to main content areas */
+  .top-sites,
+  .search-wrapper,
+  .customize-menu {
+    backdrop-filter: blur(8px) !important;
+  }
+
+  /* Smooth scrolling for all elements */
+  * {
+    scroll-behavior: smooth !important;
+  }
+
+  /* Better focus indicators */
+  *:focus-visible {
+    outline: 2px solid AccentColor !important;
+    outline-offset: 2px !important;
+    border-radius: 4px !important;
+  }
+}

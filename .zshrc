@@ -65,8 +65,8 @@ alias grace="cd ~/docs/grace/ && tmux"
 alias ls="eza --icons=always"
 alias ll="ls -l"
 alias la="ls -a"
-alias voidTerminalHistory="> $HISTFILE && fc -p" # too many words coz everything will be gone... 
-
+alias voidhist="> $HISTFILE && fc -p"
+alias nirvana="py ~/docs/grace/nirvana/src/main.py"
 # === CARGO ===
 export PATH="$HOME/.cargo/bin:$PATH"
 
