@@ -1,4 +1,18 @@
--- ~~Don't~~ Stop me now
+--     NNNUQQQE          ENENE       EQN       E   QQ QNUQEEQUUUEU          QUNEQQ    UQQEEEUEENE     UNQNEN       ENEQUNNQ                
+--   UN      EQU    QEN      QU    QEEN      U   UE      EU             EE      EU       UE       QQ      UQE    QE      EE              
+--   EN        EE  EQ         EE   QE NE     Q           NE             UE               NQ      QE         UE   NN       QU             
+--   EQ        EU  UQ          E   EU   E    E           QU              EQQENE          EN     UU          UE   UU      EN              
+--   EQ        QU  EN         NQ   EN    UU  E           NE                     UE       UQ      EU         QN   EQNUQ                   
+--   QE       EQ   NEN        NU   NE     UN E           NU            EN        QE      EQ      EN        EU    UQ                      
+--   NQNENNUNQE      NUENUUEEQ     EQ      UQU           NQ             QUNNNEEUEN       EN        ENUENEUEQ     UE                      
+--  
+--           EQU        NE    NEEEEQEQUN         EE        E       UQEEE      UU      UU      QN        EN              
+--           EQE       NQN    EU                 NNUE      E    UEN      EE   EE     QENE     UE        EE              
+--           UQQQ     QU Q    EU                 EE QE     E   QQ         NQ   QU    EE U    NE         EN              
+--           UU EE    E  E    QEQNEEEQNQ         UN  EQ    N   UQ          N   EQ   EN  EE   EU         NN              
+--           NE  NQ  Q   E    EU                 QE    Q   N   NN         UE    EN  N    U  NE          EU              
+--           EN   Q UN   E    UE                 UE     QQ Q   NEQ        QE     Q NU    NN E                           
+--           NU   EEQ    E    ENNNEQEQUE         UE      QNQ     EEEEQEEUQ       NNN      QEU           QN              
 
 -- leaderKey = <space>
 vim.g.mapleader      = " "
@@ -86,4 +100,4 @@ require("lazy").setup({
   },
 })
 
--- make sure npm is installed in your system!!!
+-- make sure npm is installed in your system!!! 
